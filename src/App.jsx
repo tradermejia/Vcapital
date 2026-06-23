@@ -7,6 +7,7 @@ import ReceptionPanel from "./pages/ReceptionPanel";
 import AdminPanel from "./pages/AdminPanel";
 import PackageDetail from "./pages/PackageDetail";
 import TermsPage from "./pages/TermsPage";
+import InstallPWA from "./components/InstallPWA";
 
 export default function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
+      <InstallPWA />
     </PackageProvider>
   );
 }
